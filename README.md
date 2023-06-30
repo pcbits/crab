@@ -2,6 +2,8 @@
 
 A basic top down scrolling game thing. Just playing with Allegro 4 and seeing what it can do across platforms.
 
+![Crab Game Thing Screenshot](https://raw.githubusercontent.com/pcbits/crab/main/data/crab-screenshot.png)
+
 # Setting up Allegro 4 dev environments
 
 How to setup allegro 4 for MSDOS, Windows, and Linux. Simple steps toward setting up cross compiler environments.
