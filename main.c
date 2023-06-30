@@ -47,12 +47,12 @@ void idle()
 
 int collision (int x, int y)
 {
-    BLKSTR * blkdatapt;
-
+    BLKSTR *blkdatapt;
     blkdatapt = MapGetBlockInPixels(x, y);
-
-    if (blkdatapt->tl) return 1;
-    else return 0;
+    if (blkdatapt->tl) {
+            return 1;
+    }
+    return 0;
 }
 
 void move()
