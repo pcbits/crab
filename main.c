@@ -1,13 +1,3 @@
-/*
-    DJGPP HOWTO:
-    gcc -std=gnu89 main.c mappyal.c -c
-    gcc -std=gnu89 main.o mappyal.o -o main.exe -lalleg
-
-    BITMAPS: Create images in 8bit(256 color mode) then save in 32bit True/High Color.
-    Windows has trouble opening 8bit images.
-    ( https://www.allegro.cc/forums/thread/616921 )
-*/
-
 #include "main.h"
 
 /**

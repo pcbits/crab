@@ -4,6 +4,23 @@ A basic top down scrolling game thing. Just playing with Allegro 4 and seeing wh
 
 ![Crab Game Thing Screenshot](https://raw.githubusercontent.com/pcbits/crab/main/data/crab-screenshot.png)
 
+# Allegro 4 and MappyAL dev tips
+
+## Older GNU C Syntax
+Fixed some syntax bugs in this code repos version of MappyAL. Also have to compile MappyAL and project with the older gnu standard of -std=gnu89. This can be seen in the makefile.dos.
+
+Ex for DJGPP:
+```
+gcc -std=gnu89 main.c mappyal.c -c
+gcc -std=gnu89 main.o mappyal.o -o main.exe -lalleg
+```
+
+## 8bit bitmaps and Windows
+
+Create your images in 8bit/256 color mode then save them in 32bit/true/high color mode.
+Windows has trouble opening true 8bit images in Allegro 4. This is a work around to allow all platforms to work.
+See this form on hints to the topic: https://www.allegro.cc/forums/thread/616921
+
 # Setting up Allegro 4 dev environments
 
 How to setup allegro 4 for MSDOS, Windows, and Linux. Simple steps toward setting up cross compiler environments.
