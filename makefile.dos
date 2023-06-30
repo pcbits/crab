@@ -1,0 +1,9 @@
+CC = gcc
+CFLAGS = -std=gnu89 -O2
+OBJECTS = main.o mappyal.o
+
+crab.exe : $(OBJECTS)
+	$(CC) $(CFLAGS) $(OBJECTS) -o crab.exe -lalleg
+
+%.o : %.c
+	$(CC) $(CFLAGS) -c $<

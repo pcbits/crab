@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1687963086 source:c:\mydos\crab\mappyal.c
+	"mappyal.h"
+
+1688056695 c:\mydos\crab\mappyal.h
+	<stdio.h>
+	<string.h>
+	<allegro.h>
+
